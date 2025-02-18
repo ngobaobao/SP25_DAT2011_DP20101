@@ -8,8 +8,12 @@ from abc import ABC
 # Đánh dấu đây là 1 Abstract Class bằng cách dùng ABC
 class Champion(ABC):
     def __init__(self, name, skill):
-        self.name = name
-        self.skill = skill
+        self.__name = name # Đóng gói, private bằng 2 dấu gạch dưới __
+        self.__skill = skill # Khi private thì class ngoài không truy cập vào được
 
     def attack(self):
-        print(self.name, 'thi triển' ,self.skill)
+        print(self.__name, 'thi triển' ,self.__skill)
+
+    # Getter
+    def get_name(self): # Cho phép bên ngoài xem được giá trị thuộc tính private
+        return self.__name
