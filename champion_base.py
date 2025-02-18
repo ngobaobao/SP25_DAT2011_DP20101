@@ -18,9 +18,9 @@ class Champion(ABC):
         pass
     def cast_skill_w(self):
         pass
-    def cast_skill_r(self):
-        pass
     def cast_skill_e(self):
+        pass
+    def cast_skill_r(self):
         pass
 
     # Getter
