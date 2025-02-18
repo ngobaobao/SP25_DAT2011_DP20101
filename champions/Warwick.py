@@ -5,7 +5,6 @@ class Warwick(Champion):
         
     def cast_skill_q(self):
         return 'Cắn xé'
-         
     def cast_skill_w(self):
         return 'Mùi máu'
     def cast_skill_e(self):
